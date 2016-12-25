@@ -1,5 +1,8 @@
-import numpy as np
 import matplotlib.pylab as plt
+import numpy as np
+import os, sys
+sys.path.append(os.pardir)
+from common.functions import step
 
 def step(x):
     return np.array(x > 0, dtype=np.int)

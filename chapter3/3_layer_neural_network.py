@@ -1,8 +1,7 @@
 import numpy as np
-from sigmoid_function import sigmoid
-
-def identity_function(x):
-    return x
+import os, sys
+sys.path.append(os.pardir)
+from common.functions import sigmoid, identity_function
 
 def init_network():
     network = {}
